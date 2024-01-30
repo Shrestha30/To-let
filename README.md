@@ -82,7 +82,7 @@ Unemplemented Features
 - In Timeline there some small feature are not properly implemented (those are properly documented in codebase)
 - Password recovery if user forget password
 
-Implemented Feature
+Detailed Report
 -----------
 Detailed report can be found here at [Report.pdf](https://github.com/Shrestha30/To-let/blob/main/Report.pdf).
   
