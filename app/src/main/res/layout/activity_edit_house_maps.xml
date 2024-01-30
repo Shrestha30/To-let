@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".EditHouseMapsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="House/Apartment Details:"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="House Name:"
+            android:textSize="17dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="Unique name, Allowed: A-Z,a-z,0-1"
+            android:id="@+id/house_name"
+            android:inputType="text"
+            android:textCursorDrawable="@null"
+            android:background="@drawable/edittext_background"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="House Address:"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:hint="House street address"
+            android:id="@+id/address_edtxt"
+            android:inputType="text"
+            android:background="@drawable/edittext_background"
+            android:textCursorDrawable="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rent (Taka/month): "
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:hint="0~100,000,00"
+            android:id="@+id/rent_edtxt"
+            android:inputType="number"
+            android:background="@drawable/edittext_background"
+            android:textCursorDrawable="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bedrooms: "
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:hint="0~100"
+            android:id="@+id/bedrooms_edtxt"
+            android:inputType="number"
+            android:background="@drawable/edittext_background"
+            android:textCursorDrawable="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:text="Floor::"
+            android:paddingLeft="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="0~99"
+            android:id="@+id/floor_number"
+            android:inputType="number"
+            android:textCursorDrawable="@null"
+            android:background="@drawable/edittext_background"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bathrooms/Toilets: "
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:paddingLeft="5dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:hint="0~100"
+            android:id="@+id/bathrooms_edtxt"
+            android:inputType="number"
+            android:background="@drawable/edittext_background"
+            android:textCursorDrawable="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size (Square Feet/ sq. ft): "
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:hint="10~1,000,00"
+            android:id="@+id/size_edtxt"
+            android:inputType="number"
+            android:background="@drawable/edittext_background"
+            android:textCursorDrawable="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Optional Details: "
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:hint="Optional details"
+            android:id="@+id/option_edtxt"
+            android:background="@drawable/edittext_background"
+            android:textCursorDrawable="@color/black"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current selected location:"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"/>
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Add/Save"
+        android:id="@+id/save_btn"
+        android:paddingRight="10dp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

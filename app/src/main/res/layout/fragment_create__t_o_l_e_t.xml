@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/house_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Create_TOLET">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/post_details_InputTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/post_detailsTextinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="House Details" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/post_creat_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="255dp"
+        android:backgroundTint="#C57D7D"
+        android:text="@string/create_post" />
+
+
+
+</RelativeLayout>

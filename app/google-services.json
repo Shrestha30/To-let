@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "269779211728",
+    "firebase_url": "https://to-let-8cd6d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "to-let-8cd6d",
+    "storage_bucket": "to-let-8cd6d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269779211728:android:3c11679b392b1e8b2855d5",
+        "android_client_info": {
+          "package_name": "com.example.to_let"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "269779211728-dpum8coeauto749pr4puvt7o5kea2pc0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD13iM_OsGzLh0mYwvTXULhawfYcSDRmrk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "269779211728-dpum8coeauto749pr4puvt7o5kea2pc0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

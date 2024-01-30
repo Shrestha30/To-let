@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">TO-LET</string>
+    <string name="to_let">TO-LET</string>
+    <string name="welcome">Welcome</string>
+    <string name="need_a_account">NEED AN ACCOUNT ?</string>
+    <string name="welcome_to_new_home">          Welcome to New Home!</string>
+    <string name="login">LOGIN</string>
+    <string name="email">Email</string>
+    <string name="display_name">Display Name</string>
+    <string name="passwoed">Password</string>
+    <string name="HomePage">homPage</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="homepage">HomePage</string>
+    <string name="logout">LogOut</string>
+    <string name="log_out">Log Out</string>
+    <string name="account">Account</string>
+    <string name="title_activity_maps_add_house">MapsAddHouseActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="account_setting">Account Setting</string>
+    <string name="hi_there">Hi there!</string>
+    <string name="change_image">CHANGE IMAGE</string>
+    <string name="change_status">CHANGE STATUS</string>
+    <string name="title_activity_edit_house_maps">EditHouseMapsActivity</string>
+    <string name="title_activity_maps_search_house">MapsSearchHouseActivity</string>
+    <string name="title_activity_search_result_maps">SearchResultMapsActivity</string>
+    <string name="all_users">All Users</string>
+    <string name="create_post">Create Post</string>
+    <string name="this_is_timeline_tab">This Is TimeLine Tab</string>
+</resources>

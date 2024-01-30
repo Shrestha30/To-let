@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchResultMapsActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="vertical"
+        android:background="#809CD1F7">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Radius(in Km): "
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:paddingLeft="10dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/radius_edtTxt"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:background="@drawable/edittext_background"
+                android:textCursorDrawable="@null"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Max Rent (Taka/month): "
+                android:textSize="17dp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:hint="0~100,000,00"
+                android:id="@+id/maxrent_edtxt"
+                android:inputType="number"
+                android:background="@drawable/edittext_background"
+                android:textCursorDrawable="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Min Bedrooms: "
+                android:textSize="17dp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:hint="0~100"
+                android:id="@+id/minbedrooms_edtxt"
+                android:inputType="number"
+                android:background="@drawable/edittext_background"
+                android:textCursorDrawable="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:text="Min Floor::"/>
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:hint="0~99"
+                android:id="@+id/minfloor_number"
+                android:inputType="number"
+                android:textCursorDrawable="@null"
+                android:background="@drawable/edittext_background"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:text="Max Floor::"
+                android:paddingLeft="10dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="0~99"
+                android:id="@+id/maxfloor_number"
+                android:inputType="number"
+                android:textCursorDrawable="@null"
+                android:background="@drawable/edittext_background"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Min Bathrooms/Toilets: "
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:paddingLeft="5dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:hint="0~100"
+                android:id="@+id/minbathrooms_edtxt"
+                android:inputType="number"
+                android:background="@drawable/edittext_background"
+                android:textCursorDrawable="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Min Size (Square Feet/ sq. ft): "
+                android:textSize="17dp"
+                android:textColor="@color/black"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:hint="10~1,000,00"
+                android:id="@+id/minsize_edtxt"
+                android:inputType="number"
+                android:background="@drawable/edittext_background"
+                android:textCursorDrawable="@color/black"/>
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/house_card_scroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:id="@+id/verified_yes_layout">
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="20dp"
+                android:src="@drawable/verifed"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To-let creator was near while creating this to-let"
+                android:background="#8000ff00"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:id="@+id/verified_no_layout">
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="20dp"
+                android:src="@drawable/not_verified"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To-let creator was not near while creating this to-let"
+                android:background="#80ffff00"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10sp"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:id="@+id/vis_layout"
+            android:background="#8000b6ff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N/A"
+                android:id="@+id/owner_name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N/A"
+                android:id="@+id/owner_number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N/A"
+                android:id="@+id/house_name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="N/A"
+                android:layout_height="wrap_content"
+                android:id="@+id/house_address"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="N/A"
+                android:layout_height="wrap_content"
+                android:id="@+id/house_detail"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Search with new provided Filters" />
+
+    </LinearLayout>
+
+</FrameLayout>

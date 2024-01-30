@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TOLET" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_200</item>
+        <item name="colorOnPrimary">@color/browser_actions_bg_grey</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/cardview_shadow_end_color</item>
+        <item name="colorSecondaryVariant">@color/cardview_shadow_start_color</item>
+        <item name="colorOnSecondary">@color/cardview_light_background</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+
+</resources>
